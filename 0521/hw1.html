@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	
+	<body>
+		<h1 align="center">加減乘除運算</h1>
+	
+			<div id="" align="center">
+				
+		
+		<form>
+		A：<input type="number" id="a" /> </br>
+		B：<input type="number" id="b" /> </br>
+		結果：<input type ="number" id="c"> </br>
+			<input type="button" value="+" onclick="jia()">	
+			<input type="button" value="-" onclick="jian()" >	
+			<input type="button" value="*" onclick="cheng()">	
+			<input type="button" value="/" onclick="chu()">
+			<input type="reset"  value="c" onClick="textdisplay()">
+				
+		</form>
+			</div>
+	
+		
+	</body>
+	
+	<script type="text/javascript">
+		
+		function jia(){//加法
+			
+			var a=document.getElementById('a').value;
+			var b=document.getElementById('b').value;
+			var c=document.getElementById('c');
+			 c.value=Number(a)+Number(b);
+
+					
+							
+		}
+			
+		function jian(){//減法
+			
+			var a=document.getElementById('a').value;
+			var b=document.getElementById('b').value;
+			var c=document.getElementById('c');
+			 c.value=Number(a)-Number(b);
+					
+							
+		}
+			
+		function cheng(){//乘法
+			
+			var a=document.getElementById('a').value;
+			var b=document.getElementById('b').value;
+			var c=document.getElementById('c');
+			 c.value=Number(a)*Number(b);
+					
+							
+		}
+			
+		function chu(){//除法
+			
+			var a=document.getElementById('a').value;
+			var b=document.getElementById('b').value;
+			var c=document.getElementById('c');
+			 c.value=Number(a)/Number(b);
+					
+							
+		}
+		
+		
+	</script>
+</html>
